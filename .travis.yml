@@ -16,9 +16,9 @@ matrix:
     - python: 3.7
       arch: arm64-graviton2
       env: TOXENV=py37
-      dist: focal
+      dist: xenial
       group: edge
-      virt: vm
+      virt: lxd
       sudo: true
 
 notifications:
