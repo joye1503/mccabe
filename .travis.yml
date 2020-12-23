@@ -20,6 +20,18 @@ matrix:
       group: edge
       virt: lxd
       sudo: true
+    - python: 3.5
+      env: TOXENV=py37
+    - python: 3.5
+      arch: arm64
+      env: TOXENV=py37
+    - python: 3.5
+      arch: arm64-graviton2
+      env: TOXENV=py37
+      dist: xenial
+      group: edge
+      virt: lxd
+      sudo: true
 
 notifications:
   irc:
